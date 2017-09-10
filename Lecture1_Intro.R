@@ -18,7 +18,7 @@ test_df <- banknote[-train_ind,]
 rm(train_ind)
 
 #Логит и пробит модели
-install.packages("lmtest") #Пакет с логит и пробит моделирвоанем
+install.packages("lmtest") #Пакет с логит и пробит моделированием
 library(lmtest)
 m.logit <- glm(Status ~ Length + Left + Right + Bottom + Top,
                data = train_df, family = binomial(link = "logit"))
